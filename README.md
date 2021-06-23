@@ -1,10 +1,11 @@
-DEMO Version 
-Docker-compose
+<p align="center">
+  <b>DEMO Version</b></br>
+  <b>Docker-compose</b>
+</p>
 
-How this means to work:
+<b>How this means to work:</b>
 1. Install docker-containers
-2. JMeter uses CSV file for IP address InfluxDB
-So correct .csv file with correct IP address of InfluxDB
+2. JMeter uses CSV file for IP address InfluxDB. So correct .csv file with correct IP address of InfluxDB
 3. Make sure that .csv file is in the same folder with .jmx script
 4. Run jmeter script.
 5. Check incoming data in InfluxDB
@@ -26,3 +27,14 @@ from(bucket: "jmeter")
  
   |> yield(name: "mean")
  
+<b>Some pictures with tune and results:</b>
+
+![InfluxDB get data from JMeter](Test_Results/1.1_influx_get_data.png?raw=true "InfluxDB get data from JMeter")
+
+![InfluxDB get data from Telegraph](Test_Results/1.2_influx_get_data.png?raw=true "InfluxDB get data from Telegraph")
+
+![Grafana settings №1](Test_Results/2.1_grafana_settings.png?raw=true "Grafana settings №1")
+
+![Grafana settings №2](Test_Results/2.2_grafana_settings.png?raw=true "Grafana settings №2")
+
+![Grafana get data №2](Test_Results/2.3_grafana_get_data.png?raw=true "Grafana get data")
